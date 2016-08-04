@@ -4,7 +4,7 @@ class Jolt < Formula
   url "https://github.com/bazaarvoice/jolt/archive/jolt-0.0.22.tar.gz"
   sha256 "ca1c379af14b746a524eeced309edfea25cf86f68ea4697271c9ad24b7834926"
 
-  depends_on :java
+  depends_on :java `>= 7`
   depends_on "maven" => :build
 
   def install
